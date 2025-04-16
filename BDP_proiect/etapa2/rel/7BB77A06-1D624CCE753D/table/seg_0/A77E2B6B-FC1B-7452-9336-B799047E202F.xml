@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A77E2B6B-FC1B-7452-9336-B799047E202F" name="Contacte">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>82DD0625-3F48-5C5F-B5EB-160D2EFEB2BE</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STRADA" id="48AAE4DB-AFA8-F6D5-96A1-1FB7BB91BB7D">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>C6E66033-DAB7-D2FF-0DA1-D949C55EC240</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORAS" id="A7F5B328-3AA9-D7AD-6E32-AFD14D57356B">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>81465940-7AA2-A7FC-FC3A-AC2190782742</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<constraintName>CONTACTE_ORAS_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(oras, &apos;^[A-Za-z0-9 -]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFON" id="0A87F674-3027-BD36-B4D3-4384BBC61E4B">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>C8928819-59D3-C791-5A7B-A0C66B1281B7</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<constraintName>CONTACTE_TELEFON_CK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(telefon, &apos;^07[0-9]{8}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="F32471EF-0734-F7E2-864F-546CBF5F479A">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>041C3F76-E2CC-E2E3-03B7-62D3C9B34003</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<constraintName>CONTACTE_EMAIL_CK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CLIENT" id="35C602E7-AA39-B080-6EB2-B104C9EC5479">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>B5A92660-EAD1-04F3-8803-D13EC90FAAE3</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E5AB37A-9B2B-A19B-18B6-6A8FF809C260" referredColumn="ED7BE0DB-FEFC-B2C7-6812-4074992C031E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D93BA8C5-7CE1-04FA-F6A2-67912547A69B" name="Contacte_PK">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>A95CFC5B-5E6B-14E2-C434-B22A8B114504</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35C602E7-AA39-B080-6EB2-B104C9EC5479"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="744225AC-5AAA-162B-180B-60EE9CCC879B" name="Contacte_EMAIL_UN">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>E9BDC29E-BD3D-3E34-739C-F13EDF9C295B</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F32471EF-0734-F7E2-864F-546CBF5F479A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AAEEC2D2-D205-23F3-CEBB-F556A78FDB41" name="Contacte_TELEFON_UN">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>4B427956-1EBF-0AD5-FABE-4EAD71171AF3</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A87F674-3027-BD36-B4D3-4384BBC61E4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C655211-CA51-338C-9207-0E74E5A82414" name="Contacte_Clienti_FK">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>8EB6B4B8-4F9F-DC91-97AA-096E5FBA23A6</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35C602E7-AA39-B080-6EB2-B104C9EC5479"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

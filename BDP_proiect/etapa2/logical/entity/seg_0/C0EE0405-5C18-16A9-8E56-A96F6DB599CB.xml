@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C0EE0405-5C18-16A9-8E56-A96F6DB599CB" name="Optiuni">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-10 17:02:43 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID CLIENT1" id="0BCF50A9-40B9-A24A-0C41-A5A9A67ABCEA">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-10 17:03:43 UTC</createdTime>
+<generatorID>F7514068-CFCB-F3AD-5F70-6ACCFBC2E336</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<referedAttribute>7B5A593C-A6F7-4228-C720-8C0E88BE937F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATA INCEPUT" id="27F2D25D-FA26-B1E5-C410-4533CE346A53">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-10 17:03:43 UTC</createdTime>
+<generatorID>F7514068-CFCB-F3AD-5F70-6ACCFBC2E336</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<referedAttribute>AF83BD0D-ADDE-B2B0-B616-4FEF471097DD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID MASINA" id="BBC01F32-04BA-925F-A4FC-DFFA8703A667">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-10 17:03:43 UTC</createdTime>
+<generatorID>F7514068-CFCB-F3AD-5F70-6ACCFBC2E336</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<referedAttribute>1F9B950D-FBE7-08F6-EA30-43A2FEE9AAB3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID ACCESORIU" id="6176775D-F6CB-25AB-82BC-F991F35A4195">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-10 17:20:58 UTC</createdTime>
+<generatorID>FBF493E4-E3FB-2475-82E7-C435827FEB94</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<referedAttribute>D2DC8923-2E17-B032-8938-7EF2C21E2B86</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B27F26CD-CDD1-825F-B830-284C325CF57E" name="Inchirieri_Accesorii PK">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-10 17:03:43 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>F7514068-CFCB-F3AD-5F70-6ACCFBC2E336,FBF493E4-E3FB-2475-82E7-C435827FEB94</newElementsIDs>
+<usedAttributes>
+<attributeRef>0BCF50A9-40B9-A24A-0C41-A5A9A67ABCEA</attributeRef>
+<attributeRef>27F2D25D-FA26-B1E5-C410-4533CE346A53</attributeRef>
+<attributeRef>BBC01F32-04BA-925F-A4FC-DFFA8703A667</attributeRef>
+<attributeRef>6176775D-F6CB-25AB-82BC-F991F35A4195</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

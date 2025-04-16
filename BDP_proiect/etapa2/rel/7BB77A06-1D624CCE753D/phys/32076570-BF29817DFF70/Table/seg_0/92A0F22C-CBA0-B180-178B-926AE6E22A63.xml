@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Accesorii" directorySegmentName="seg_0" id="92A0F22C-CBA0-B180-178B-926AE6E22A63">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-19 16:59:25 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DENUMIRE" id="502DD874-5F08-0A18-3887-4E3E6BE84DD0">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-19 16:59:25 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ACCESORIU" id="5EC631A9-9003-62BB-BD51-FC8BF1F6B13A">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-19 16:59:25 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TARIF" id="FB9EFC4A-13D7-49A5-7FCB-3B3139E9D84F">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-19 16:59:25 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Accesorii_PK" id="780C9E04-7597-096A-FD30-8B0AA8257ED9">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-19 16:59:25 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

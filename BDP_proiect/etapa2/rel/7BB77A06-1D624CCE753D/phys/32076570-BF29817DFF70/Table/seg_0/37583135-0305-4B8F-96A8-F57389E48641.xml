@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Optiuni" directorySegmentName="seg_0" id="37583135-0305-4B8F-96A8-F57389E48641">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-08 15:08:43 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_CLIENT" id="307489C0-BB82-7465-EF09-124DEADC7904">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-08 15:08:43 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_MASINA" id="89597270-07E3-A09B-F8D2-D5BB9968D118">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-08 15:08:43 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ACCESORIU" id="9629BA20-EFB7-5D90-E854-08627D9745E4">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-08 15:08:43 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_INCEPUT" id="D4914EEA-616D-1A31-5B8B-3F18F553BB99">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-08 15:08:43 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Optiuni_Accesorii_FK" id="69BB3EA5-7839-A663-EA24-D5BF20AC3813">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-08 15:08:43 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Optiuni_Inchirieri_FK" id="782FF766-B126-3C91-3EA4-7BA898B0A20D">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-08 15:08:43 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Optiuni_PK" id="233FCCB7-B83A-52A5-D15E-A7F3F2CAF034">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-08 15:08:43 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Contacte" directorySegmentName="seg_0" id="F8FF0416-0A63-A512-00FB-C7D97E00FF2B">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EMAIL" id="12599A23-34C7-696A-3FD2-1381739DB6FA">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TELEFON" id="2F8D9470-5BB4-154E-552B-0964E0ABBBA9">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STRADA" id="3F7E37B4-298E-8331-F829-99B60DA71F33">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORAS" id="E39F7A48-1076-647E-9EAC-4C519F59870F">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CLIENT" id="FAF1A808-47F4-A4A1-28EF-90ED35446500">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Contacte_Clienti_FK" id="6B9F8F6F-F7AD-A3C3-E210-3BED640E3AE0">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Contacte_PK" id="4497DC6E-B2E1-527C-AA89-02674A6ACD06">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Contacte_EMAIL_UN" id="45B462D8-E661-2DEA-A438-828886F31CD3">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Contacte_TELEFON_UN" id="EB85A9FB-D407-0CFC-AE15-BAF25E13C1CD">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

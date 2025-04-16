@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A85EE269-F603-84BB-B53E-C17CD2B3FB65" containerWithKeyObject="4567B28B-2F7D-92EE-6DFA-174424FCF652" localFKIndex="D2CA2DE9-DA4D-4F8E-9506-0F3058F2FB81" name="Optiuni_Accesorii_FK">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>FBF493E4-E3FB-2475-82E7-C435827FEB94</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<referredTableLongName>Accesorii</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>47151731-B2DE-D431-9CDD-9633B76BF1D3</referredTableID>
+<keyObject>D3DE12DA-8CAF-C82E-9BE1-5E6A72416F8D</keyObject>
+<referredKeyID>D3DE12DA-8CAF-C82E-9BE1-5E6A72416F8D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_ACCESORIU</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

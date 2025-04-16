@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CB0E6365-9EBF-5450-3AF2-0DD474C54699" containerWithKeyObject="4567B28B-2F7D-92EE-6DFA-174424FCF652" localFKIndex="370D2B60-559E-E6F5-FCE6-CD080BA2D81A" name="Optiuni_Inchirieri_FK">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>F7514068-CFCB-F3AD-5F70-6ACCFBC2E336</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<referredTableLongName>Inchirieri</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8E968D43-F010-9FEA-EE68-3A8C88D8D868</referredTableID>
+<keyObject>9FF7D012-3E56-949E-0E6B-A954943626A4</keyObject>
+<referredKeyID>9FF7D012-3E56-949E-0E6B-A954943626A4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_CLIENT,DATA_INCEPUT,ID_MASINA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

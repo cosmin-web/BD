@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Inchieri_Accesorii2_FK" directorySegmentName="seg_0" id="FBF493E4-E3FB-2475-82E7-C435827FEB94">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-10 17:20:58 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<sourcePk>229C6034-7C4D-244B-9A41-9E9705D973E5</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>includ</nameOnSource>
+<nameOnTarget>fac parte din</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0110EA70-2942-F2AA-6A66-8DE0636EC2B7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C0EE0405-5C18-16A9-8E56-A96F6DB599CB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

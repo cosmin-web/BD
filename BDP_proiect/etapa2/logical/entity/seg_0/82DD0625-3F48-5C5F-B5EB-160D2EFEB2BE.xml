@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="82DD0625-3F48-5C5F-B5EB-160D2EFEB2BE" name="Contacte">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-10 15:45:54 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="STRADA" id="C6E66033-DAB7-D2FF-0DA1-D949C55EC240">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-10 16:01:42 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ORAS" id="81465940-7AA2-A7FC-FC3A-AC2190782742">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-10 16:02:02 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<constraintName>CONTACTE_ORAS_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(oras, &apos;^[A-Za-z0-9 -]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TELEFON" id="C8928819-59D3-C791-5A7B-A0C66B1281B7">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-10 16:02:02 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<constraintName>CONTACTE_TELEFON_CK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(telefon, &apos;^07[0-9]{8}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMAIL" id="041C3F76-E2CC-E2E3-03B7-62D3C9B34003">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-10 16:02:03 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<constraintName>CONTACTE_EMAIL_CK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID CLIENT" id="B5A92660-EAD1-04F3-8803-D13EC90FAAE3">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-10 16:23:06 UTC</createdTime>
+<generatorID>8EB6B4B8-4F9F-DC91-97AA-096E5FBA23A6</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<referedAttribute>AFD11FFF-62DC-CE45-0BF0-1906D34C0CEA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E9BDC29E-BD3D-3E34-739C-F13EDF9C295B" name="CONTACTE_EMAIL_UK">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-10 16:13:36 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="false"/>
+</engineerTo>
+<newElementsIDs>041C3F76-E2CC-E2E3-03B7-62D3C9B34003</newElementsIDs>
+<usedAttributes>
+<attributeRef>041C3F76-E2CC-E2E3-03B7-62D3C9B34003</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="4B427956-1EBF-0AD5-FABE-4EAD71171AF3" name="CONTACTE_TELEFON_UK">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-10 16:14:00 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="false"/>
+</engineerTo>
+<newElementsIDs>C8928819-59D3-C791-5A7B-A0C66B1281B7</newElementsIDs>
+<usedAttributes>
+<attributeRef>C8928819-59D3-C791-5A7B-A0C66B1281B7</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="A95CFC5B-5E6B-14E2-C434-B22A8B114504" name="Contacte PK">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-10 16:32:17 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B5A92660-EAD1-04F3-8803-D13EC90FAAE3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Clienti" directorySegmentName="seg_0" id="EE6899C7-3BD0-6009-B153-CF4C18E4D782">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NUME" id="0BB1EEC0-1695-0458-CA67-E59A472C286A">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CLIENT" id="0EBF5962-5E24-C1C1-B498-D4C36FD5F1FF">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRENUME" id="16297B79-48FB-1C73-E078-C8EF5FEB4688">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SERIE_CI" id="99293DEF-3FAA-8B91-147C-C37B2DEE1632">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUMAR_CI" id="A55F62E0-C9A5-739C-4732-FEAE3E781F41">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Clienti_PK" id="35C2037F-6FAF-B48A-140A-9A8B2654BA71">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="Clienti_SERIE_CI_NUMAR_CI_UN" id="8CF883EE-92C1-E6CA-EDFB-B5FD5434A7CE">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

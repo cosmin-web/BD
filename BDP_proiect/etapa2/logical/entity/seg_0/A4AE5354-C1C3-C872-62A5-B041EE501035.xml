@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A4AE5354-C1C3-C872-62A5-B041EE501035" name="Masini">
+<createdBy>coanc</createdBy>
+<createdTime>2024-10-26 15:53:04 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID MASINA" id="CC695010-75C7-122B-CA45-5FE0BF0D0939">
+<createdBy>coanc</createdBy>
+<createdTime>2024-10-26 16:25:42 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<constraintName>MASINI_ID_MASINA_CK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(ID_masina, &apos;^[A-HJ-NPR-Z0-9]{17}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CAROSERIE" id="F979E7B0-8D60-E177-6362-292343627889">
+<createdBy>coanc</createdBy>
+<createdTime>2024-10-26 16:30:30 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<constraintName>MASINI_CAROSERIE_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<listOfValues>
+<valueDef value="ORAS" description=""/>
+<valueDef value="SPORT" description=""/>
+<valueDef value="SUV" description=""/>
+<valueDef value="TEREN" description=""/>
+</listOfValues>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COMBUSTIBIL" id="30F20144-8BF5-47F6-3EDF-E1A80EC47236">
+<createdBy>coanc</createdBy>
+<createdTime>2024-10-26 16:32:03 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<constraintName>MASINI_COMBUSTIBIL_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<listOfValues>
+<valueDef value="BENZINA" description=""/>
+<valueDef value="ELECTRIC" description=""/>
+<valueDef value="HIBRID" description=""/>
+<valueDef value="MOTORINA" description=""/>
+</listOfValues>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TARIF" id="047AFA95-BE70-EF8C-F019-B0747F03014B">
+<createdBy>coanc</createdBy>
+<createdTime>2024-10-26 16:32:26 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<constraintName>MASINI_TARIF_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<listOfValues>
+<valueDef value="1000" description=""/>
+<valueDef value="1500" description=""/>
+<valueDef value="2000" description=""/>
+<valueDef value="500" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DISPONIBILITATE" id="1999E3A7-01C4-F083-4A1C-38BE11F39602">
+<createdBy>coanc</createdBy>
+<createdTime>2024-10-26 16:33:14 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<constraintName>MASINI_DISPONIBILITATE_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>50</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="52793F2F-E179-4AFB-AF5B-061D31E4F3C3" name="Masini_PK">
+<createdBy>coanc</createdBy>
+<createdTime>2024-10-26 16:35:18 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>CC695010-75C7-122B-CA45-5FE0BF0D0939</newElementsIDs>
+<usedAttributes>
+<attributeRef>CC695010-75C7-122B-CA45-5FE0BF0D0939</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

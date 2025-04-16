@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4567B28B-2F7D-92EE-6DFA-174424FCF652" name="Optiuni">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>C0EE0405-5C18-16A9-8E56-A96F6DB599CB</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CLIENT" id="B6E75C11-6D6B-D645-90E7-A2174196ADD2">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>0BCF50A9-40B9-A24A-0C41-A5A9A67ABCEA</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB0E6365-9EBF-5450-3AF2-0DD474C54699" referredColumn="09CBEB6E-D4B3-5FBD-D6E8-BAFC1BA165A7"/>
+</associations>
+</Column>
+<Column name="DATA_INCEPUT" id="2CA39863-67B3-6487-A1BE-259B9853FEEF">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>27F2D25D-FA26-B1E5-C410-4533CE346A53</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB0E6365-9EBF-5450-3AF2-0DD474C54699" referredColumn="1FFFB85A-DE36-EA3E-62A5-B77E22BC1A8C"/>
+</associations>
+</Column>
+<Column name="ID_MASINA" id="134FF0C6-006D-BA3B-D91C-CCD1FC803008">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>BBC01F32-04BA-925F-A4FC-DFFA8703A667</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB0E6365-9EBF-5450-3AF2-0DD474C54699" referredColumn="BE06A36D-7E09-BAEA-2D55-981A880D0514"/>
+</associations>
+</Column>
+<Column name="ID_ACCESORIU" id="69DFF749-D02E-8A99-E9F7-D6AF658C5D90">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>6176775D-F6CB-25AB-82BC-F991F35A4195</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A85EE269-F603-84BB-B53E-C17CD2B3FB65" referredColumn="4F3B8459-51E1-BF9E-A469-EB40F8371BDD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F14DEA3F-8923-4E3E-940A-12F259C27472" name="Optiuni_PK">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>B27F26CD-CDD1-825F-B830-284C325CF57E</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6E75C11-6D6B-D645-90E7-A2174196ADD2"/>
+<colUsage columnID="2CA39863-67B3-6487-A1BE-259B9853FEEF"/>
+<colUsage columnID="134FF0C6-006D-BA3B-D91C-CCD1FC803008"/>
+<colUsage columnID="69DFF749-D02E-8A99-E9F7-D6AF658C5D90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2CA2DE9-DA4D-4F8E-9506-0F3058F2FB81" name="Optiuni_Accesorii_FK">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>FBF493E4-E3FB-2475-82E7-C435827FEB94</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69DFF749-D02E-8A99-E9F7-D6AF658C5D90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="370D2B60-559E-E6F5-FCE6-CD080BA2D81A" name="Optiuni_Inchirieri_FK">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>F7514068-CFCB-F3AD-5F70-6ACCFBC2E336</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6E75C11-6D6B-D645-90E7-A2174196ADD2"/>
+<colUsage columnID="2CA39863-67B3-6487-A1BE-259B9853FEEF"/>
+<colUsage columnID="134FF0C6-006D-BA3B-D91C-CCD1FC803008"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

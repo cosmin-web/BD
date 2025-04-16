@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="8DFC3B20-611E-70EE-8B7D-ADC5BAB7E3E8" mainViewID="4D868A82-A241-0BDD-B146-EF79D48E5CC6">
+<createdBy>coanc</createdBy>
+<createdTime>2024-10-26 15:51:47 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

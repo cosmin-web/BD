@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B994440E-9958-7533-FF60-20D2A289C37F" name="Clienti">
+<createdBy>coanc</createdBy>
+<createdTime>2024-10-26 15:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID CLIENT" id="AFD11FFF-62DC-CE45-0BF0-1906D34C0CEA">
+<createdBy>coanc</createdBy>
+<createdTime>2024-10-26 15:53:37 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<constraintName>CLIENTI_ID_CLIENT_CK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="substr(id_client, 1, 1) IN (&apos;1&apos;, &apos;2&apos;, &apos;5&apos;, &apos;6&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SERIE CI" id="36CD9BC9-560E-2D0C-8B09-6B6D011ABAF4">
+<createdBy>coanc</createdBy>
+<createdTime>2024-10-26 15:54:43 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<constraintName>CLIENTI_SERIE_CI_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="IZ" description=""/>
+<valueDef value="MZ" description=""/>
+</listOfValues>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NUMAR CI" id="BDC3607C-28AC-EC96-82AC-4B5964F8ED8D">
+<createdBy>coanc</createdBy>
+<createdTime>2024-10-26 15:56:18 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<constraintName>CLIENTI_NUMAR_CI_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(numar_ci)=6"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NUME" id="DC22C5CE-1895-A011-3145-3BA4A8548EC8">
+<createdBy>coanc</createdBy>
+<createdTime>2024-10-26 15:56:34 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<constraintName>CLIENTI_NUME_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(nume, &apos;^[A-Za-z]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRENUME" id="4B0284C3-F7E5-95E7-18B8-BE030BB725A8">
+<createdBy>coanc</createdBy>
+<createdTime>2024-10-26 15:56:48 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<constraintName>CLIENTI_PRENUME_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(prenume, &apos;^[A-Za-z -]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="053126E6-BF96-5523-444D-241FB95178AB" name="Clienti_PK">
+<createdBy>coanc</createdBy>
+<createdTime>2024-10-26 15:53:55 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>AFD11FFF-62DC-CE45-0BF0-1906D34C0CEA</newElementsIDs>
+<usedAttributes>
+<attributeRef>AFD11FFF-62DC-CE45-0BF0-1906D34C0CEA</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F84BD192-AE09-BEEA-EA1B-1E79469E8A7C" name="Clienti_SERIE_CI_NUMAR_CI_UN">
+<createdBy>coanc</createdBy>
+<createdTime>2024-10-26 15:59:06 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="false"/>
+</engineerTo>
+<newElementsIDs>36CD9BC9-560E-2D0C-8B09-6B6D011ABAF4,BDC3607C-28AC-EC96-82AC-4B5964F8ED8D</newElementsIDs>
+<usedAttributes>
+<attributeRef>36CD9BC9-560E-2D0C-8B09-6B6D011ABAF4</attributeRef>
+<attributeRef>BDC3607C-28AC-EC96-82AC-4B5964F8ED8D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

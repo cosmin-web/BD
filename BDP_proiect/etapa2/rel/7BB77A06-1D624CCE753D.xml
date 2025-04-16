@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="7BB77A06-247A-E88C-A4C4-1D624CCE753D" mainViewID="A653ED5B-3D5B-DA40-48D5-36887624A5D0">
+<createdBy>coanc</createdBy>
+<createdTime>2024-10-26 15:51:49 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

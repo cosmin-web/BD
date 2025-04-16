@@ -1,0 +1,24 @@
+Problema care modelează problematica unui magazin de închiriat mașini.
+
+Magazinul are un stoc de 200 de mașini.
+Mașinile disponibile pot fi de mai multe tipuri: mașini electrice, mașini de oraș, SUV-uri, mașini de teren și mașini sport.
+Din fiecare tip de mașină, magazinul are 50 de bucăți.
+Mașinile sunt clasificate după tipul combustibilului in următoarele categorii: mașini pe benzină, mașini pe motorină, mașini electrice, mașini hibride.
+Clienții pot închiria mașinile pentru una sau mai multe zile, iar la sfârșitul perioadei de închiriere, magazinul calculează prețul total pe baza numărului de zile și a tipului mașinii închiriate(eventual si accesorii).
+La acest magazin NU se realizează rezervări deoarece fiecare client poate să închirieze mașina cât dorește și nu se va cunoaște perioada de închiriere.
+Pentru a închiria o mașină, magazinul trebuie să rețină anumite date de la clienți (seria și numărul CI, nume, adresă - stradă, oraș, număr de telefon, adresă de email).
+Pe lângă mașini, magazinul oferă și diverse accesorii pe care clienții le pot închiria, cum ar fi GPS-uri, scaune pentru copii, rovinieta electronică, brelocuri, suport pentru telefon, cabluri pentru încărcare.
+Plata pentru accesorii se face odată cu plata pentru închirierea mașinii.
+În magazin se poate înregistra o singură persoană pentru fiecare închiriere, iar acea persoană trebuie să fie un client deja înregistrat în sistem.
+
+Entități:
+- entitatea contacte (stradă, oraș, email, telefon)
+- entitatea clienți (ID_client, serie_CI, număr_CI, nume, prenume)
+- entitatea mașini (ID_mașină, caroserie: oraș/SUV/teren/sport, tip combustibil: electrică/benzină/motorină/hibridă, tarif, disponibilitate)
+- entitatea închirieri (ID_client - foreign key din entitatea clienți, ID_mașină - foreign key din entitatea mașini, data_început, data_sfârșit, cost_total)
+- entitatea accesorii (ID_accesoriu, denumire, tarif)
+- entitatea opțiuni, rezultată în urma spargerii entităților închirieri și accesorii, aflându-se în relație m la n (ID_client - foreign key din entitatea clienți, data_început - foreign key din entitatea închirieri, ID_mașină - foreign key din entitatea mașini, ID_accesoriu - foreign key din entitatea accesorii)
+
+Precizări:
+- un client poate închiria una sau mai multe mașini
+- clientul poate alege dacă dorește accesorii (poate cumpăra unul sau mai multe dacă vrea)

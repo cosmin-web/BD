@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Masini" directorySegmentName="seg_0" id="177AA0D6-7173-1A74-6D23-074DE763E2F9">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TARIF" id="51DC6796-10C7-E511-96A1-3145A1AB5812">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAROSERIE" id="5D7E5DB9-3907-EAF4-F0E0-41A7CF7AE195">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DISPONIBILITATE" id="64645645-75A0-1325-A003-70FA3FE08249">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMBUSTIBIL" id="76954FDC-A141-02F7-4C6B-CD5CC7B7AA97">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_MASINA" id="F54754DC-7B97-CA33-0BB0-B17F4A634581">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Masini_PK" id="3F45F0FB-57FE-FD3E-1359-7942855959BE">
+<createdBy>coanc</createdBy>
+<createdTime>2024-12-20 10:52:56 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

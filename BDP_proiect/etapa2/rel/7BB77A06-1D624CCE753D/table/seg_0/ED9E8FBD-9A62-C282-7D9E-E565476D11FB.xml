@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED9E8FBD-9A62-C282-7D9E-E565476D11FB" name="Clienti">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>B994440E-9958-7533-FF60-20D2A289C37F</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CLIENT" id="ED7BE0DB-FEFC-B2C7-6812-4074992C031E">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>AFD11FFF-62DC-CE45-0BF0-1906D34C0CEA</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<constraintName>CLIENTI_ID_CLIENT_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="substr(id_client, 1, 1) IN (&apos;1&apos;, &apos;2&apos;, &apos;5&apos;, &apos;6&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SERIE_CI" id="C1B63593-29DA-9110-DF87-FE474BE99E92">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>36CD9BC9-560E-2D0C-8B09-6B6D011ABAF4</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<constraintName>CLIENTI_SERIE_CI_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="IZ" description=""/>
+<valueDef value="MZ" description=""/>
+</listOfValues>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMAR_CI" id="03F552C4-7F91-69D2-5C31-DACECA7710AC">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>BDC3607C-28AC-EC96-82AC-4B5964F8ED8D</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<constraintName>CLIENTI_NUMAR_CI_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(numar_ci)=6"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUME" id="CC036B67-4FB8-64CC-5CA3-074A1FA0F005">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>DC22C5CE-1895-A011-3145-3BA4A8548EC8</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<constraintName>CLIENTI_NUME_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(nume, &apos;^[A-Za-z]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRENUME" id="A3621BFD-CCDC-EE99-8CFE-69080A2C5DBF">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>4B0284C3-F7E5-95E7-18B8-BE030BB725A8</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<constraintName>CLIENTI_PRENUME_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(prenume, &apos;^[A-Za-z -]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AB311AAB-C061-5C56-E00B-23355057FAAB" name="Clienti_PK">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>053126E6-BF96-5523-444D-241FB95178AB</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED7BE0DB-FEFC-B2C7-6812-4074992C031E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E138313-CF2D-909B-6D78-527214165613" name="Clienti_SERIE_CI_NUMAR_CI_UN">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>F84BD192-AE09-BEEA-EA1B-1E79469E8A7C</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1B63593-29DA-9110-DF87-FE474BE99E92"/>
+<colUsage columnID="03F552C4-7F91-69D2-5C31-DACECA7710AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

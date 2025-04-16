@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="MASINI_INCHIRIERI_FK" directorySegmentName="seg_0" id="FB2E6ABE-0A6D-5040-4035-918A513CC998">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-10 16:55:31 UTC</createdTime>
+<ownerDesignName>etapa2</ownerDesignName>
+<engineerTo>
+<item key="7BB77A06-247A-E88C-A4C4-1D624CCE753D" value="true"/>
+</engineerTo>
+<sourcePk>52793F2F-E179-4AFB-AF5B-061D31E4F3C3</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>sunt inchiriate</nameOnSource>
+<nameOnTarget>au alocat</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A4AE5354-C1C3-C872-62A5-B041EE501035</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AEB9FA4E-A96D-5B8A-D5D0-9FF74240DF32</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="47151731-B2DE-D431-9CDD-9633B76BF1D3" name="Accesorii">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>0110EA70-2942-F2AA-6A66-8DE0636EC2B7</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ACCESORIU" id="4F3B8459-51E1-BF9E-A469-EB40F8371BDD">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>D2DC8923-2E17-B032-8938-7EF2C21E2B86</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<constraintName>ACCESORII_ID_ACCESORIU_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="LENGTH(ID_ACCESORIU)=12"/>
+</checkConstraint>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>100000000000</autoIncrementStartWith>
+<autoIncrementMinValue>100000000000</autoIncrementMinValue>
+<autoIncrementMaxValue>999999999999</autoIncrementMaxValue>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DENUMIRE" id="AF357E7C-9AFB-88F5-61A8-86CC3A72FB2F">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>31051036-F209-879E-9B04-30E5BABA8FB4</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<constraintName>ACCESORII_DENUMIRE_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="BRELOC" description=""/>
+<valueDef value="CABLU INCARCARE" description=""/>
+<valueDef value="GPS" description=""/>
+<valueDef value="ROVINIETA ELECTRONICA" description=""/>
+<valueDef value="SCAUN PENTRU COPII" description=""/>
+<valueDef value="SUPORT PENTRU TELEFON" description=""/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TARIF" id="07AAA3D5-8F38-4E50-3386-186DFBECCD3B">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>E4A16BF2-AF1B-5D2A-516A-797EDF639375</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<constraintName>ACCESORII_TARIF_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<listOfValues>
+<valueDef value="1000" description=""/>
+<valueDef value="150" description=""/>
+<valueDef value="30" description=""/>
+<valueDef value="40" description=""/>
+<valueDef value="50" description=""/>
+<valueDef value="500" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D3DE12DA-8CAF-C82E-9BE1-5E6A72416F8D" name="Accesorii_PK">
+<createdBy>coanc</createdBy>
+<createdTime>2024-11-24 16:55:31 UTC</createdTime>
+<generatorID>229C6034-7C4D-244B-9A41-9E9705D973E5</generatorID>
+<ownerDesignName>etapa2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F3B8459-51E1-BF9E-A469-EB40F8371BDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
